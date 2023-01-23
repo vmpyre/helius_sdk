@@ -37,9 +37,7 @@ For example, you can use the `get_balances()` method of the `BalancesAPI` class 
 The SDK provides functionality for interacting with the NFTAPI, NameAPI, BalancesAPI, TransactionsAPI and WebhooksAPI endpoints. 
 You can view the class methods below:
 
-## Class Methods
-See the Official Helius documentation for additional information: https://docs.helius.xyz/api-reference/
-
+## Documentation
 ### WebhooksAPI
 - [create_webhook()](https://github.com/vmpyre/helius_sdk/blob/master/docs/apis.md#webhookapicreate_webhook)
 - [get_all_webhooks()](https://github.com/vmpyre/helius_sdk/blob/master/docs/apis.md#webhookapiget_all_webhooks)
@@ -65,6 +63,7 @@ See the Official Helius documentation for additional information: https://docs.h
 ### NameAPI
 - [get_address_name()](https://github.com/vmpyre/helius_sdk/blob/master/docs/apis.md#namesapiget_address_name)
 
+*See the Official Helius documentation for additional information: https://docs.helius.xyz/api-reference/*
 
 ## Contribution
 Feel free to open issues, pull requests and submit feedback. We appreciate your help!
