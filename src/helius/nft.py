@@ -59,7 +59,7 @@ class NFTAPI:
         url = self.base_url + path + self.api_key_query
         payload = {
             "query": {
-                "firstVerifiedCreator": first_verified_creator,
+                "firstVerifiedCreators": first_verified_creator,
                 "verifiedCollectionAddress": verified_collection_address
             },
             "options": {
@@ -91,7 +91,7 @@ class NFTAPI:
         payload = {
             "query": {
                 "marketplaces": marketplaces,
-                "firstVerifiedCreator": first_verified_creator,
+                "firstVerifiedCreators": first_verified_creator,
                 "verifiedCollectionAddress": verified_collection_address
             },
             "options": {
