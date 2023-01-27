@@ -49,8 +49,8 @@ class NFTAPI:
 
     def get_mintlists(
         self, 
-        first_verified_creator: List[str],
-        verified_collection_address: List[str]=None,
+        first_verified_creators: List[str],
+        verified_collection_addresses: List[str]=None,
         limit: int=None,
         pagination_token: str=None
         ):
@@ -59,8 +59,8 @@ class NFTAPI:
         url = self.base_url + path + self.api_key_query
         payload = {
             "query": {
-                "firstVerifiedCreators": first_verified_creator,
-                "verifiedCollectionAddress": verified_collection_address
+                "firstVerifiedCreators": first_verified_creators,
+                "verifiedCollectionAddresses": verified_collection_addresses
             },
             "options": {
                 "limit": limit,
@@ -79,8 +79,8 @@ class NFTAPI:
 
     def get_active_listings(
         self, 
-        first_verified_creator: List[str],
-        verified_collection_address: List[str]=None,
+        first_verified_creators: List[str],
+        verified_collection_addresses: List[str]=None,
         marketplaces: List[str]=None,
         limit: int=None,
         pagination_token: str=None
@@ -91,8 +91,8 @@ class NFTAPI:
         payload = {
             "query": {
                 "marketplaces": marketplaces,
-                "firstVerifiedCreators": first_verified_creator,
-                "verifiedCollectionAddress": verified_collection_address
+                "firstVerifiedCreators": first_verified_creators,
+                "verifiedCollectionAddresses": verified_collection_addresses
             },
             "options": {
                 "limit": limit,

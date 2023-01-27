@@ -256,8 +256,8 @@ print(nft_events)
 The `get_mintlists()` function is a part of the NFTAPI class in the SDK. It is used to obtain all NFTs for a given NFT collection.
 
 #### Parameters
-- `first_verified_creator` (List[str]): First verified creator of the NFT. Used to reference NFT collections
-- `verified_collection_address` (List[str], optional): Verified Metaplex collection address. Does not exist for all NFT collections.
+- `first_verified_creators` (List[str]): First verified creator of the NFT. Used to reference NFT collections
+- `verified_collection_addresses` (List[str], optional): Verified Metaplex collection address. Does not exist for all NFT collections.
 - `limit` (int, optional): Maximum number of items to return. Must be between 1 and 10,000. Default is 1000.
 - `pagination_token` (str, optional): Token used for pagination. Provide the token to the API to retrieve the results from the next page. If no token exists, the query has no results remaining.
 
@@ -329,8 +329,8 @@ print(nft_descriptions)
 The `get_active_listings()` function is a part of the NFTAPI class in the SDK. It is used to query for active NFT listings across marketplaces and NFT collections.
 
 #### Parameters
-- `first_verified_creator` (List[str]): First verified creator of the NFT. Used to reference NFT collections
-- `verified_collection_address` (List[str], optional): Verified Metaplex collection address. Does not exist for all NFT collections.
+- `first_verified_creators` (List[str]): First verified creator of the NFT. Used to reference NFT collections
+- `verified_collection_addresses` (List[str], optional): Verified Metaplex collection address. Does not exist for all NFT collections.
 - `marketplaces` (List[str], optional): List of supported marketplaces to retrieve the data for.
 - `limit` (int, optional): Maximum number of items to return. Must be between 1 and 10,000. Default is 1000.
 - `pagination_token` (str, optional): Token used for pagination. Provide the token to the API to retrieve the results from the next page. If no token exists, the query has no results remaining.
