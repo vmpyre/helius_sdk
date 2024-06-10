@@ -12,6 +12,7 @@ class WebhooksAPI:
         transaction_types: list, 
         account_addresses: list, 
         webhook_type: str, 
+        txn_status: str="all",
         auth_header: str=None
         ):
         
@@ -21,7 +22,8 @@ class WebhooksAPI:
             "webhookURL": webhook_url,
             "transactionTypes": transaction_types,
             "accountAddresses": account_addresses,
-            "webhookType": webhook_type
+            "webhookType": webhook_type,
+            "txn_status": txn_status
         }
         if auth_header:
             payload["authHeader"] = auth_header
@@ -47,6 +49,7 @@ class WebhooksAPI:
         transaction_types: list, 
         account_addresses: list, 
         webhook_type: str, 
+        txn_status: str="all",
         auth_header: str=None
         ):
 
@@ -56,9 +59,10 @@ class WebhooksAPI:
             "webhookURL": webhook_url,
             "transactionTypes": transaction_types,
             "accountAddresses": account_addresses,
-            "webhookType": webhook_type
+            "webhookType": webhook_type,
+            "txn_status": txn_status
         }
-
+    
         if auth_header:
             payload["authHeader"] = auth_header
 
