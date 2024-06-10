@@ -23,7 +23,7 @@ class WebhooksAPI:
             "transactionTypes": transaction_types,
             "accountAddresses": account_addresses,
             "webhookType": webhook_type,
-            "txn_status": txn_status
+            "txnStatus": txn_status
         }
         if auth_header:
             payload["authHeader"] = auth_header
@@ -60,7 +60,7 @@ class WebhooksAPI:
             "transactionTypes": transaction_types,
             "accountAddresses": account_addresses,
             "webhookType": webhook_type,
-            "txn_status": txn_status
+            "txnStatus": txn_status
         }
     
         if auth_header:
